@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Html5QrcodePlugin from './components/Html5QrcodePlugin';
+import React, { useCallback, useState } from 'react';
+import usersDataMock from './mocks/userData.mock';
 
 function App() {
+  const [user, setUser] = useState("");
+
+  const handleQRCodeSuccess = (decodedText) => {
+    console.log(decodedText);
+    const userInDB = usersDataMock.find((user) => user.name === decodedText);
+    setUser(userInDB);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Html5Qrcode React example!</h1>
+      <Html5QrcodePlugin
+        fps={10}
+        qrbox={250}
+        disableFlip={false}
+        qrCodeSuccessCallback={handleQRCodeSuccess}
+      />
+      {
+        user && <h1>{`usuário: ${user.name}, carro: ${user.vehicleModel}`}</h1>
+      }
     </div>
   );
 }
