@@ -12,6 +12,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<QRCodeCheck />} />
         </Routes>
+        <Routes>
+          <Route path="/order_service" element={<QRCodeCheck />} />
+        </Routes>
       </MyProvider>
     </BrowserRouter>
   );
