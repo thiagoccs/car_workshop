@@ -4,6 +4,7 @@ import UserCard from '../components/UserCard';
 import CardPartsInput from '../components/CardPartsInput';
 import cardPartsMock from '../mocks/cardsParts.mock';
 import CardMechanic from '../components/CardMechanic';
+import OrderReady from '../components/OrderReady';
 
 export default function ServiceOrder() {
   const { user, selectedMechanic, setSelectedMechanic, } = useContext(MyContext);
@@ -37,6 +38,7 @@ export default function ServiceOrder() {
           mechanic={selectedMechanic}
         />
       }
+      <OrderReady />
     </div>
   )
 }
