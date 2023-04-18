@@ -1,0 +1,85 @@
+.CardPartsInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.CardPartsInput button {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.CardPartsInput button:hover {
+  background-color: var(--color-tertiary);
+}
+
+.CardPartsInput form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.CardPartsInput select {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.CardPartsInput option {
+  background-color: var(--color-tertiary);
+}
+
+.CardPartsInput > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.CardPartsInput > div > span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.CardPartsInput > div > button {
+  background-color: var(--color-tertiary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.CardPartsInput > div > button:hover {
+  background-color: var(--color-secondary);
+}
+
+.CardPartsInput button[type="submit"] {
+  margin-top: 10px;
+  background-color: var(--color-tertiary);
+}
+
+.CardPartsInput button[type="submit"]:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
