@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import MyProvider from './context/Provider';
 import QRCodeCheck from './pages/QRCodeCheck';
+import ServiceOrder from './pages/ServiceOrder';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
           <Route exact path="/" element={<QRCodeCheck />} />
         </Routes>
         <Routes>
-          <Route path="/order_service" element={<QRCodeCheck />} />
+          <Route path="/serviceOrder" element={<ServiceOrder />} />
         </Routes>
       </MyProvider>
     </BrowserRouter>
