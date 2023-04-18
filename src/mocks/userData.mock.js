@@ -36,7 +36,7 @@ const usersDataMock = [
     lastName: "Ribeiro",
     address: "Rua Teste, 1303, Bairro Lagoinha",
     email: "leticia@teste.com",
-    vehicleModel: "Kia Sou",
+    vehicleModel: "Corola",
     vehicleYear: 2016,
   },
 ]

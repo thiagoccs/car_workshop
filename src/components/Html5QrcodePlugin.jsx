@@ -1,5 +1,7 @@
 import { Html5QrcodeScanner } from "html5-qrcode";
 import React from 'react';
+// usei o código disponibilizado no blog https://blog.minhazav.dev/Qr-code-and-barcode-scanner-in-react/
+// créditos https://scanapp.org/
 
 const qrcodeRegionId = "html5qr-code-full-region";
 

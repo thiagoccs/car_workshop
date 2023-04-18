@@ -1,0 +1,23 @@
+.user-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.user-card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.user-card p {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.user-card strong {
+  font-weight: bold;
+}
