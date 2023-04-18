@@ -6,10 +6,8 @@ const LogoutLink = () => {
   const { setUser } = useContext(MyContext);
 
   const logout = () => {
-    localStorage.removeItem("currentDate");
-    localStorage.removeItem("selectedMechanic");
-    localStorage.removeItem('user');
-    setUser('');
+    setUser("");
+    localStorage.clear();
   };
 
   return (

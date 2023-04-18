@@ -13,10 +13,6 @@ const OrderCompleted = () => {
     const selectedMechanicData = JSON.parse(localStorage.getItem("selectedMechanic"));
     const userData = JSON.parse(localStorage.getItem("user"));
     const carPartsData = JSON.parse(localStorage.getItem("carParts"));
-    console.log(currentDate);
-    console.log(selectedMechanic);
-    console.log(userData);
-    console.log(carParts);
 
     setCurrentDate(currentDateData);
     setSelectedMechanic(selectedMechanicData);
