@@ -7,7 +7,7 @@ Para a simulação do retorno de dados do banco de dados, foram utilizados arqui
 
 Para testar a aplicação, sugerimos utilizar o QR Code abaixo:
 
-QR Code de teste
+![QR Code para teste](https://github.com/thiagoccs/car_workshop/blob/main/qrplus-code-1681773932492.jpg?raw=true)
 
 Basta escanear o código com o celular e seguir as instruções na tela para utilizar a aplicação.
 
@@ -28,3 +28,6 @@ cd car-workshop
 <h3>Execute a aplicação:</h3>
 <p>npm start</p>
 <p>A aplicação estará disponível no endereço http://localhost:3000.</p>
+
+<h3>Créditos</h3>
+<p>biblioteca: Html5QrcodeScanner, código para implemantação dessa biblioteca: blog.minhazav.dev e scanapp.org</p>
