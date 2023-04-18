@@ -1,4 +1,4 @@
-const carPartsMock = [
+const cardPartsMock = [
   {
     id: 1,
     name: 'Alternador',
@@ -51,4 +51,4 @@ const carPartsMock = [
   }
 ];
 
-export default carPartsMock;
+export default cardPartsMock;

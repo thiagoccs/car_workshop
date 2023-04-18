@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import usersDataMock from '../mocks/userData.mock';
 import mechanicMock from '../mocks/mechanic.mock';
@@ -6,8 +6,7 @@ import Html5QrcodePlugin from '../components/Html5QrcodePlugin';
 import MyContext from '../context/MyContext';
 
 export default function QRCodeCheck() {
-  const { user, setUser } = useContext(MyContext);
-  const [selectedMechanic, setSelectedMechanic] = useState("");
+  const { user, setUser, selectedMechanic, setSelectedMechanic } = useContext(MyContext);
 
   const handleQRCodeSuccess = (decodedText) => {
     const userInDB = usersDataMock.find((user) => user.name === decodedText);
@@ -16,8 +15,8 @@ export default function QRCodeCheck() {
   };
 
   const handleMechanicChange = (event) => {
+    localStorage.setItem('selectedMechanic', JSON.stringify({name: event.target.value}));
     setSelectedMechanic(event.target.value);
-    localStorage.setItem('selectedMechanic', selectedMechanic);
   };
 
   return (

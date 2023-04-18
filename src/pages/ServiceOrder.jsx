@@ -1,11 +1,20 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import MyContext from '../context/MyContext';
 import UserCard from '../components/UserCard';
-import CarPartsInput from '../components/CarPartsInput';
-import carPartsMock from '../mocks/carParts.mock';
+import CardPartsInput from '../components/CardPartsInput';
+import cardPartsMock from '../mocks/cardsParts.mock';
+import CardMechanic from '../components/CardMechanic';
 
 export default function ServiceOrder() {
-  const { user } = useContext(MyContext);
+  const { user, selectedMechanic, setSelectedMechanic, } = useContext(MyContext);
+
+  useEffect(() => {
+    const mechanic = JSON.parse(localStorage.getItem('selectedMechanic'));
+    if (mechanic) {
+      setSelectedMechanic(mechanic);
+    }
+  }, []);
+
   return (
     <div>
       {
@@ -19,9 +28,15 @@ export default function ServiceOrder() {
           vehicleYear={user.vehicleYear}
         />
       }
-      <CarPartsInput
-        carPartsMock={carPartsMock}
+      <CardPartsInput
+        carPartsMock={cardPartsMock}
       />
+      {
+        selectedMechanic &&
+        <CardMechanic
+          mechanic={selectedMechanic}
+        />
+      }
     </div>
   )
 }

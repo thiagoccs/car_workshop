@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const CarPartsInput = ({ carPartsMock }) => {
+const CardPartsInput = ({ carPartsMock }) => {
   const [showParts, setShowParts] = useState(false);
   const [selectedParts, setSelectedParts] = useState([]);
   const [canSubmit, setCanSubmit] = useState(false);
@@ -30,7 +30,6 @@ const CarPartsInput = ({ carPartsMock }) => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     localStorage.setItem('carParts', JSON.stringify(selectedParts));
-    alert('Peças salvas no localStorage!');
     setSelectedParts([]);
     setCanSubmit(false);
   };
@@ -65,4 +64,4 @@ const CarPartsInput = ({ carPartsMock }) => {
   );
 };
 
-export default CarPartsInput;
+export default CardPartsInput;
