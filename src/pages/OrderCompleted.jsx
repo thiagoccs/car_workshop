@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LogoutLink from '../components/LogoutLink';
+import '../style/OrderCompleted.css'
 
 const OrderCompleted = () => {
   const [currentDate, setCurrentDate] = useState("");
@@ -39,7 +40,7 @@ const OrderCompleted = () => {
   }, [currentDate, selectedMechanic, user, carParts]);
 
   return (
-    <div>
+    <div className="container">
       <div>
         <h1>Nota de Serviço</h1>
         {selectedMechanic && <p>Mecânico Responsável: {selectedMechanic.name}</p>}
