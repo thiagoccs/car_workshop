@@ -4,6 +4,7 @@ import usersDataMock from '../mocks/userData.mock';
 import mechanicMock from '../mocks/mechanic.mock';
 import Html5QrcodePlugin from '../components/Html5QrcodePlugin';
 import MyContext from '../context/MyContext';
+import '../style/QRCodeCheck.css';
 
 export default function QRCodeCheck() {
   const { user, setUser, selectedMechanic, setSelectedMechanic } = useContext(MyContext);
@@ -20,7 +21,7 @@ export default function QRCodeCheck() {
   };
 
   return (
-    <div>
+    <div className="QRCodeCheck">
       {user === "" ? (
         <>
           <h1>Leitor de QR Code</h1>
@@ -34,9 +35,9 @@ export default function QRCodeCheck() {
       ) : (
         <>
           <form>
-            <label htmlFor="mechanic">Escolha um mecânico:</label>
+            <label htmlFor="mechanic"></label>
             <select id="mechanic" name="mechanic" onChange={handleMechanicChange}>
-              <option value="">Selecione um mecânico</option>
+              <option value="">Selecione um mecânico(a)</option>
               {mechanicMock.map(mechanic => (
                 <option key={mechanic.id} value={mechanic.name}>{mechanic.name}</option>
               ))}

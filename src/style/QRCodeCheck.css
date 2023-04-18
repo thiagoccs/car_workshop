@@ -1,0 +1,67 @@
+:root {
+  --color-primary: rgb(233, 254, 254);
+  --color-secondary: rgb(32,43,87);
+  --color-tertiary: rgb(55,179,202);
+}
+
+.QRCodeCheck {
+  width: 100vw;
+  background-color: var(--color-primary);
+  color: rgb(32,43,87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.QRCodeCheck h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.QRCodeCheck form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.QRCodeCheck label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.QRCodeCheck select {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.QRCodeCheck option {
+  background-color: var(--color-tertiary);
+}
+
+.QRCodeCheck button {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.QRCodeCheck button:hover {
+  background-color: var(--color-tertiary);
+}

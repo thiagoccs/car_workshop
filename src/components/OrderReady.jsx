@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import MyContext from '../context/MyContext';
 
 export default function OrderReady() {
-  const [ready, setReady] = useState(false);
+  const {ready, setReady} = useContext(MyContext);
 
   const handleReadyChange = (e) => {
     if (e.target.checked) {

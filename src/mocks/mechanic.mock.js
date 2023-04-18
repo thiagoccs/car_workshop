@@ -1,10 +1,10 @@
 const mechanicMock = [
-  { id: 1, name: 'Alice' },
-  { id: 2, name: 'Bob' },
-  { id: 3, name: 'Charlie' },
-  { id: 4, name: 'David' },
-  { id: 5, name: 'Eve' },
-  { id: 6, name: 'Frank' }
+  { id: 1, name: 'Ana' },
+  { id: 2, name: 'Bia' },
+  { id: 3, name: 'Carlos' },
+  { id: 4, name: 'Davi' },
+  { id: 5, name: 'Eva' },
+  { id: 6, name: 'Felipe' }
 ];
 
 export default mechanicMock;

@@ -5,12 +5,15 @@ import MyContext from './MyContext';
 function MyProvider({ children }) {
   const [user, setUser] = useState("");
   const [selectedMechanic, setSelectedMechanic] = useState("");
+  const [ready, setReady] = useState(false);
   const contextValue = useMemo(() => ({
     user,
     setUser,
     selectedMechanic,
     setSelectedMechanic,
-  }), [user, selectedMechanic]);
+    ready,
+    setReady,
+  }), [user, selectedMechanic, ready]);
   
   return (
     <MyContext.Provider value={ contextValue }>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../style/CardPartsInput.css'
 
 const CardPartsInput = ({ carPartsMock }) => {
   const [showParts, setShowParts] = useState(false);
@@ -35,7 +36,7 @@ const CardPartsInput = ({ carPartsMock }) => {
   };
 
   return (
-    <div>
+    <div className="CardPartsInput">
       <button onClick={() => setShowParts(!showParts)}>Envolver peças</button>
       {showParts && (
         <form onSubmit={handleFormSubmit}>

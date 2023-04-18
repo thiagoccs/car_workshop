@@ -1,0 +1,56 @@
+/* ServiceOrder.css */
+
+/* Estilo para o container pai */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilo para o card do usuário */
+.user-card {
+  background-color: rgb(60,221,221);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Estilo para o input de partes do carro */
+.parts-input {
+  background-color: rgb(32,43,87);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Estilo para o card do mecânico */
+.mechanic-card {
+  background-color: rgb(55,179,202);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Estilo para o botão de ordem pronta */
+.ready-button {
+  background-color: #fff;
+  color: rgb(60,221,221);
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(60,221,221);
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito hover para o botão de ordem pronta */
+.ready-button:hover {
+  background-color: rgb(60,221,221);
+  color: #fff;
+}
